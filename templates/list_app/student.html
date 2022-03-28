@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hi this is Custom page</h1>
+{% for student in student %}
+    <li><a href="{% url 'detail' student.id %}">Student Name:{{ student.name }}</a> <br>
+    Student Rall No:{{ student.rall_no }}<br>
+    Student Address:{{ student.address }}<br><br>
+{% endfor %}
+
+
+</body>
+</html>
+</body>
+</html>

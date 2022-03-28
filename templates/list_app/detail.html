@@ -1,0 +1,16 @@
+<html>
+<head>
+    <titile>detail</titile>
+</head>
+<body>
+<h1>Detail Veiew</h1>
+{{ student.id }}
+{{ student.name }}
+{{ student.rall_no }}
+{{ student.address }}
+<hr>
+{% for student in all_student %}
+    <li><a href="{% url 'detail' student.id %}">{{ student.name }}</a> </li>
+{% endfor %}
+</body>
+</html>
